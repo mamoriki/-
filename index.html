@@ -239,8 +239,16 @@
         import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
         import { getFirestore, doc, setDoc, onSnapshot, getDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
-        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
-        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAcceg41Ur4-6D3DbhgWKCsY2xOFRztQbE",
+  authDomain: "my-tally-app-bd944.firebaseapp.com",
+  projectId: "my-tally-app-bd944",
+  storageBucket: "my-tally-app-bd944.firebasestorage.app",
+  messagingSenderId: "839114835862",
+  appId: "1:839114835862:web:95998dee43773a4a11bfb7",
+  measurementId: "G-7DCLVWQJ8X"
+};
 
         const fbApp = initializeApp(firebaseConfig);
         const auth = getAuth(fbApp);
@@ -838,3 +846,4 @@
     </script>
 </body>
 </html>
+
